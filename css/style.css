@@ -94,9 +94,7 @@ section .container {
     width: 90%;
     margin: 0 auto;
     /* DEBUG */
-    background-color: red;
     border: 1px solid black;
-    min-height: 500px;
 }
 
 .white-section {
@@ -107,9 +105,6 @@ section .container {
     background-color: rgba(151,146,228,255);
 }
 
-
-
-
 /* REGOLE MAIN DESKTOP */
 @media screen and (min-width: 769px) {
     section .container {
@@ -117,3 +112,111 @@ section .container {
     }
     
 }
+
+/* sezione demo application */
+
+#demo .col {
+    margin-bottom: 10px;
+    width: 100%;
+    /* debug */
+    height: 90px;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+#double {
+    width: 100%;
+    margin-bottom: 10px;
+    /* debug */
+    height: 90px;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+/* REGOLE SEZIONE DEMO APPLICATION TABLET E DESKTOP STESSE REGOLE*/
+@media screen and (min-width: 481px) {
+    #demo {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    #demo .col {
+        width: calc((100% / 3) - 10px);
+    }
+
+    #double {
+        width: calc(((100% /3) * 2) - 10px);
+    }
+    
+}
+
+/* sezione strategic planning */
+#strategic .col {
+    width: 100%;
+    margin-bottom: 10px;
+    /* DEBUG */
+    background-color: yellow;
+    min-height: 100px;
+    border: solid 1px black;
+
+}
+
+/* STRATEGIC PLANNING DESKTOP */
+@media screen and (min-width: 769px) {
+    #strategic {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #strategic .col {
+        width: 50%;
+    }
+
+    #strategic .right {
+        margin-top: 20px;
+    }
+    
+}
+
+/* sezione testimonials */
+.text, .card {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* DEBUG */
+    min-height: 100px;
+    border: 1px solid black;
+}
+
+.card {
+    background-color: rgba(151,146,228,255);
+}
+
+.test-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.test-container img {
+    max-width: 70%;
+    border-radius: 50%;
+}
+
+#testimonials {
+    /* DEBUG */
+    min-height: 300px;
+}
+
+.name {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
