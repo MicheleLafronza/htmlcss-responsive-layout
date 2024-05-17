@@ -21,6 +21,7 @@ header {
     height: 70px;
     background-color: rgba(0,132,253,255);
     position: fixed;
+    z-index: 20;
 }
 
 header .container {
@@ -187,6 +188,9 @@ section .container {
     margin-bottom: 10px;
 }
 
+#demo-flex {
+    padding-bottom: 0px;
+}
 
 
 /* REGOLE SEZIONE DEMO APPLICATION TABLET E DESKTOP STESSE REGOLE*/
@@ -221,13 +225,10 @@ section .container {
         width:calc(50% - 10px) ;
     }
 
-    #demo-left {
-        height: 100%;
-    }
-
     #demo {
         font-size: 1.1rem;
     }
+
 }
 
 /* sezione strategic planning */
