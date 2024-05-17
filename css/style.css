@@ -240,20 +240,67 @@ section .container {
 #strategic .col {
     width: 100%;
     margin-bottom: 10px;
+    color: white;
     /* DEBUG */
-    background-color: yellow;
-    min-height: 100px;
-    border: solid 1px black;
+    /* border: solid 1px black; */
 
+}
+
+#strategic-image {
+    width: 100%;
+}
+
+#strategic-image img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#strategic .left h1 {
+    margin-top: 20px;
+    color: white;
+    font-size: 1.8rem;
+}
+
+#strategic .left p {
+    margin-top: 20px;
+    color: white;
+}
+
+#strategic .right {
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 15px;
+
+}
+
+#right-container {
+    width: 80%;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+}
+
+#right-container p {
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+#planning-image {
+    width: 100%;
+}
+
+#planning-image img {
+    max-width: 100%;
+    object-fit: cover;
 }
 
 /* STRATEGIC PLANNING DESKTOP */
 @media screen and (min-width: 769px) {
     #strategic {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
+        gap: 20px;
     }
 
     #strategic .col {
@@ -261,7 +308,7 @@ section .container {
     }
 
     #strategic .right {
-        margin-top: 20px;
+        align-self: flex-end;
     }
     
 }
