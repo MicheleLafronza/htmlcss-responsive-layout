@@ -24,41 +24,39 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* DEBUG */
-    border: solid 1px black;
 }
 
 #logo {
-    /* DEBUG */
     width: 20%;
-    height: 40px;
-    background-color: yellow;
 }
 
 #hamburger-menu {
-    /* DEBUG */
-    width: 10%;
-    height: 40px;
-    background-color: yellow;
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
 }
 
 #menu {
     display: none;
     list-style-type: none;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
-    /* DEBUG */
-    background-color: brown;
 }
 
-/* #menu li {
-    line-height: 70px;
-} */
 
-#menu li a {
+.no-button {
     display: inline-block;
     line-height: 70px;
     color: white;
+}
+
+#button-menu {
+    display: inline-block;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 12px;
 }
 
 /* REGOLE HEADER DESKTOP */
