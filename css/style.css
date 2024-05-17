@@ -189,7 +189,7 @@ section .container {
     padding-top: 10px;
     padding-bottom: 10px;
     /* DEBUG */
-    min-height: 100px;
+    /* min-height: 100px; */
     border: 1px solid black;
 }
 
@@ -204,10 +204,19 @@ section .container {
     
 }
 
-.test-container img {
-    max-width: 70%;
+.photo {
+    width: 70%;
+    margin: 10px auto;
+    
+}
+
+.photo img {
+    max-width: 100%;
+    object-fit: cover;
     border-radius: 50%;
 }
+
+
 
 #testimonials {
     /* DEBUG */
@@ -216,7 +225,85 @@ section .container {
 
 .name {
     display: block;
-    font-size: 20px;
+    margin-top: 10px;
+    font-size: 16px;
     font-weight: bold;
 }
 
+/* regole table e desktop */
+@media screen and (min-width: 481px) {
+    .card .test-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        text-align: left;
+
+    }
+
+    .photo {
+        width: 30%;
+    }
+    
+    .card .test-container p {
+        width: 60%;
+    }
+}
+
+
+/* regole sezione WORKING WITH US */
+#working-title {
+    color: white;
+    text-align: center;
+    font-size: 27px;
+}
+
+.box-flex-container {
+    width: 100%;
+
+}
+
+.margin-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.box {
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box h3 {
+    color: rgba(151,146,228,255);
+}
+
+.number {
+    color: rgba(151,146,228,255);
+}
+
+/* REGOLE TABLET */
+@media screen and (min-width: 481px) {
+    .box-flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .box {
+        width: calc(50% - 10px);
+        margin-bottom: 0px;
+    }
+}
+
+/* REGOLE DESKTOP */
+@media screen and (min-width: 769px) {
+    .box {
+        width: calc((100% / 3) - 10px);
+        margin-bottom: 0px;
+    }
+    
+}
