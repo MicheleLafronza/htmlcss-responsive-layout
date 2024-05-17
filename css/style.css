@@ -9,6 +9,12 @@ a {
     text-decoration: none;
 }
 
+.button {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 12px;
+}
+
 /* REGOLE HEADER */
 header {
     width: 100%;
@@ -92,7 +98,7 @@ section .container {
     width: 90%;
     margin: 0 auto;
     /* DEBUG */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .white-section {
@@ -116,20 +122,71 @@ section .container {
 #demo .col {
     margin-bottom: 10px;
     width: 100%;
+    background-color: rgba(181,221,255,255);
+    text-align: center;
+    border-radius: 12px;
     /* debug */
-    height: 90px;
-    background-color: blue;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #double {
     width: 100%;
     margin-bottom: 10px;
+    background-color: rgba(181,221,255,255);
+    border-radius: 12px;
     /* debug */
-    height: 90px;
-    background-color: blue;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
+
+.demo-container {
+    width: 90%;
+    margin: 10px auto 0 auto;
+    font-weight: bold;
+}
+
+#demo h2 {
+    color: rgba(3,134,253,255);
+    margin-bottom: 20px;
+}
+
+#demo p {
+    color: rgba(97,118,136,255);
+}
+
+#phone-image {
+    width: 60%;
+    margin: 20px auto 0 auto;
+}
+
+#phone-image img {
+    display: block;
+    max-width: 100%;
+}
+
+#app-button {
+    color: white;
+    background-color: rgba(0,132,253,255);
+    margin-top: 20px;
+    width: 60%;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.demo-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.demo-container .fa-solid {
+    color: rgba(3,134,253,255);
+    font-size: 6rem;
+}
+
+.col .demo-container {
+    margin-bottom: 10px;
+}
+
+
 
 /* REGOLE SEZIONE DEMO APPLICATION TABLET E DESKTOP STESSE REGOLE*/
 @media screen and (min-width: 481px) {
@@ -149,6 +206,35 @@ section .container {
     }
     
 }
+
+/* REGOLE SEZIONE DEMO APPLICATION DESKTOP */
+@media screen and (min-width: 769px) {
+    #demo-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #demo-left, #phone-image {
+        width:calc(50% - 10px) ;
+    }
+
+    #demo-left {
+        height: 100%;
+    }
+
+    #demo {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+
+
+
 
 /* sezione strategic planning */
 #strategic .col {
