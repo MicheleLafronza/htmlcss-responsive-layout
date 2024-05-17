@@ -502,8 +502,13 @@ section .container {
     margin-bottom: 20px;
 }
 
-#bot-right h3 {
+#bot-right span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
     color: rgba(151,146,228,255);
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 #ceo-photo {
@@ -512,7 +517,7 @@ section .container {
 }
 
 #ceo-photo img {
-    max-width: 55%;
+    max-width: 100%;
     border-radius: 50%;
 }
 
@@ -521,22 +526,38 @@ section .container {
     #about-us {
         display: flex;
         justify-content: space-between;
-        gap: 10px;
+        align-items: center;
+        gap: 30px;
     }
     
     #top-left, #bot-right {
-        width: calc(50% - 10px);
+        width: calc(50% - 30px);
         margin-top: 20px;
     }
 
     #bot-right {
-        text-align: center;
+        text-align: left;
     }
 
-    #ceo-photo {
-        margin: 0 auto;
-    }
 }
+
+#find-me-button {
+    background-color: rgba(151,146,228,255);
+    color: white;
+}
+
+#quote {
+    color: rgba(151,146,228,255);
+    position: absolute;
+    font-size: 3rem;
+    top: -9px;
+    right: -10px;
+}
+
+
+
+
+
 
 /* REGOLE DESKTOP */
 @media screen and (min-width: 769px) {
