@@ -180,6 +180,7 @@ section .container {
 .demo-container .fa-solid {
     color: rgba(3,134,253,255);
     font-size: 6rem;
+    margin-bottom: 7px;
 }
 
 .col .demo-container {
@@ -228,13 +229,6 @@ section .container {
         font-size: 1.1rem;
     }
 }
-
-
-
-
-
-
-
 
 /* sezione strategic planning */
 #strategic .col {
@@ -383,6 +377,7 @@ section .container {
     display: block;
     margin-top: 10px;
     font-weight: bold;
+    letter-spacing: 3px;
 }
 
 /* regole table e desktop */
@@ -410,6 +405,7 @@ section .container {
 #working-title {
     color: white;
     text-align: center;
+    font-size: 2rem;
 }
 
 .box-flex-container {
@@ -427,6 +423,7 @@ section .container {
     background-color: white;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 30px;
 }
 
 .box h3 {
@@ -435,7 +432,34 @@ section .container {
 
 .number {
     color: rgba(151,146,228,255);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    padding-top: 20px;
 }
+
+.box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+
+}
+
+.box p {
+    color: rgba(148,148,148,255);
+    margin-bottom: 20px;
+}
+
+.box a {
+    background-color: rgba(151,146,228,255);
+    color: white;
+    width: 60%;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
 
 /* REGOLE TABLET */
 @media screen and (min-width: 481px) {
