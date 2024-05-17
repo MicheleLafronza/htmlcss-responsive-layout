@@ -226,7 +226,6 @@ section .container {
 .name {
     display: block;
     margin-top: 10px;
-    font-size: 16px;
     font-weight: bold;
 }
 
@@ -255,7 +254,6 @@ section .container {
 #working-title {
     color: white;
     text-align: center;
-    font-size: 27px;
 }
 
 .box-flex-container {
@@ -317,7 +315,6 @@ section .container {
 
 #top-left h1 {
     color: rgba(151,146,228,255);
-    font-size: 27px;
     margin-bottom: 15px;
 }
 
@@ -372,4 +369,23 @@ section .container {
     }
 
     
+}
+
+/* regole sezione GET STARTED */
+#get-started {
+    text-align: center;
+    width: 90%;
+}
+
+/* REGOLE TABLET */
+@media screen and (min-width: 481px) {
+    #get-started {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #get-started {
+        width: 60%;
+    }
 }
