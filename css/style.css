@@ -373,6 +373,7 @@ section .container {
 
 /* regole sezione GET STARTED */
 #get-started {
+    margin: 0 auto;
     text-align: center;
     width: 90%;
 }
@@ -387,5 +388,29 @@ section .container {
 @media screen and (min-width: 769px) {
     #get-started {
         width: 60%;
+    }
+}
+
+/* Regole FOOTER */
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+#footer-container {
+    margin: 0 auto;
+    width: 85%;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 30px;
+}
+
+/* REGOLE TABLET E DESKTOP */
+@media screen and (min-width: 481px) {
+    #footer-container {
+        width: 65%;
     }
 }
