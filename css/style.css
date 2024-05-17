@@ -287,6 +287,15 @@ section .container {
 
 }
 
+#right-container a {
+    font-size: 1.3rem;
+    display: inline-block;
+    background-color: rgba(151,146,228,255);
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
 #planning-image {
     width: 100%;
 }
@@ -321,11 +330,34 @@ section .container {
     padding-bottom: 10px;
     /* DEBUG */
     /* min-height: 100px; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
+
+#testimonials .text span {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#testimonials .text h1 {
+    font-size: 2rem;
+    color: rgba(151,146,228,255);
+    margin-bottom: 20px;
+}
+
+#testimonials .text p {
+    font-size: 1.1rem;
+}
+
+
 
 .card {
     background-color: rgba(151,146,228,255);
+    border-radius: 30px;
+}
+
+.card p {
+    color: white;
 }
 
 .test-container {
@@ -345,13 +377,6 @@ section .container {
     max-width: 100%;
     object-fit: cover;
     border-radius: 50%;
-}
-
-
-
-#testimonials {
-    /* DEBUG */
-    min-height: 300px;
 }
 
 .name {
